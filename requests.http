@@ -1,0 +1,28 @@
+GET http://localhost:3000/people
+
+###
+
+GET http://localhost:3000/people/2
+
+###
+
+POST http://localhost:3000/people
+Content-Type: application/json
+
+{
+  "name": "fake person",
+  "league": "lol none",
+  "rank": 50,
+  "axe": "shovel"
+}
+
+###
+PATCH http://localhost:3000/people/1
+Content-Type: application/json
+
+{
+  "rank": 10
+}
+
+###
+DELETE http://localhost:3000/people/7
